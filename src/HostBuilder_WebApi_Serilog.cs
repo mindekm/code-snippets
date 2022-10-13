@@ -20,10 +20,10 @@ public static class Program
 
             return 0;
         }
-        catch()
+        catch(Exception e)
         {
-            Log.Fatal(e, "Host terminated unexpectedly")
-            return 1
+            Log.Fatal(e, "Host terminated unexpectedly");
+            return 1;
         }
         finally
         {
